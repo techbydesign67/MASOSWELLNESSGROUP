@@ -18,10 +18,17 @@
 
     body {
       min-height: 100vh;
-      background: url('https://i.pinimg.com/1200x/25/78/c6/2578c68f68af4fd3d974d3c9cecdf8e4.jpg') center/cover no-repeat fixed;
+      background: url('https://i.pinimg.com/1200x/25/78/c6/2578c68f68af4fd3d974d3c9cecdf8e4.jpg') center/cover no-repeat;
       font-family: 'LaChic', serif;
       color: #3f4f45;
       position: relative;
+    }
+
+    /* Ensure mobile displays background properly */
+    @media (min-width: 769px) {
+      body {
+        background-attachment: fixed;
+      }
     }
 
     body::before {
